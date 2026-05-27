@@ -1,4 +1,166 @@
-*{
-    padding: 0;
+body {
     margin: 0;
+    padding: 0;
+    background: #E9E1D3;
+    font-family: "Georgia", serif;
+}
+
+.contenedor {
+    width: 700px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+label {
+    width: 180px;
+    text-align: left;
+    font-size: 35px;
+    color: #000;
+}
+
+input {
+    width: 350px;
+    height: 55px;
+    border-radius: 18px;
+    border: 1px solid #555;
+    background: #cfc5a8;
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+}
+
+button {
+    width: 120px;
+    height: 45px;
+    border: none;
+    border-radius: 18px;
+    background: #9da06f;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #7f8259;
+    color: #000;
+}
+
+:root {
+    --verde-oscuro: #737A57;
+    --verde-claro: #A4A880;
+    --beige-claro: #E9E1D3;
+    --beige-oscuro: #CEC4A8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: var(--verde-oscuro);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.logo.header {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header>div:last-child {
+    display: flex;
+    gap: 15px;
+}
+
+header button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--verde-claro);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header button:hover {
+    background-color: var(--beige-oscuro);
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: var(--verde-oscuro);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-foother {
+    width: 60px;
+    height: auto;
+}
+
+footer>div:last-child {
+    display: flex;
+    gap: 15px;
+}
+
+footer button {
+    background-color: transparent;
+    border: 2px solid #d9d6c8;
+    color: #d9d6c8;
+    padding: 8px 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+footer button:hover {
+    background-color: #d9d6c8;
+    color: var(--verde-claro);
+}
+
+.social-container {
+    display: flex;
+    gap: 10px;
 }
